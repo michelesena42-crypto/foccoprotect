@@ -1,4 +1,6 @@
 import { Shield, Camera, Bell, Monitor, Cpu, Smartphone } from "lucide-react";
+import securityCamera from "@/assets/security-camera.jpg";
+import securityApp from "@/assets/security-app.jpg";
 
 const Solutions = () => {
   const solutions = [
@@ -63,22 +65,80 @@ const Solutions = () => {
           </p>
         </div>
 
-        {/* Solutions Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {solutions.map((solution, index) => (
-            <div
-              key={index}
-              className="card-glow group p-6 transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3">
-                <solution.icon className="h-6 w-6 text-primary transition-colors group-hover:text-accent" />
-              </div>
-              <h3 className="mb-2 font-display text-xl font-semibold">
-                {solution.title}
-              </h3>
-              <p className="text-muted-foreground">{solution.description}</p>
+        {/* Content Grid with Image */}
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Image Side */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-2xl">
+              <img
+                src={securityCamera}
+                alt="Câmera de segurança de alta performance"
+                className="h-auto w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             </div>
-          ))}
+            {/* Floating Card */}
+            <div className="absolute -bottom-6 -right-6 max-w-xs rounded-xl border border-border bg-card/90 p-4 shadow-2xl backdrop-blur-sm">
+              <div className="flex items-center gap-3">
+                <div className="rounded-lg bg-accent/20 p-2">
+                  <Smartphone className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <p className="font-semibold">Controle na palma da mão</p>
+                  <p className="text-sm text-muted-foreground">Gerencie tudo pelo app</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Solutions Grid */}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {solutions.map((solution, index) => (
+              <div
+                key={index}
+                className="card-glow group p-5 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="mb-3 inline-flex rounded-xl bg-primary/10 p-3">
+                  <solution.icon className="h-5 w-5 text-primary transition-colors group-hover:text-accent" />
+                </div>
+                <h3 className="mb-1 font-display text-lg font-semibold">
+                  {solution.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">{solution.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* App Section */}
+        <div className="mt-20 grid items-center gap-12 lg:grid-cols-2">
+          <div className="order-2 lg:order-1">
+            <h3 className="mb-4 font-display text-2xl font-bold sm:text-3xl">
+              Aplicativo de <span className="gradient-text">Gestão Completa</span>
+            </h3>
+            <p className="mb-6 text-muted-foreground">
+              Tenha o controle total do seu condomínio na palma da mão. Visualize câmeras, 
+              gerencie acessos, receba alertas e comunique-se com a portaria em tempo real.
+            </p>
+            <ul className="space-y-3">
+              {["Acesso às câmeras em tempo real", "Liberação de visitantes pelo app", "Notificações de eventos", "Comunicação com portaria"].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-muted-foreground">
+                  <div className="h-1.5 w-1.5 rounded-full bg-accent" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="order-1 flex justify-center lg:order-2">
+            <div className="relative">
+              <img
+                src={securityApp}
+                alt="Aplicativo de gestão de segurança"
+                className="h-auto max-w-xs rounded-2xl shadow-2xl"
+              />
+              <div className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-r from-primary/20 to-accent/20 blur-xl" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

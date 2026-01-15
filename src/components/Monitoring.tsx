@@ -1,4 +1,5 @@
 import { Eye, Video, Wifi, MonitorPlay, Cpu, VideoIcon } from "lucide-react";
+import monitoringRoom from "@/assets/monitoring-room.jpg";
 
 const Monitoring = () => {
   const features = [
@@ -60,25 +61,51 @@ const Monitoring = () => {
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-xl border border-border bg-gradient-to-br from-card to-background p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
-            >
-              <div className="absolute right-0 top-0 h-32 w-32 translate-x-8 -translate-y-8 rounded-full bg-primary/5 transition-transform group-hover:scale-150" />
-              <div className="relative">
-                <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-colors group-hover:bg-primary/20">
-                  <feature.icon className="h-6 w-6 text-primary" />
+        {/* Main Content Grid */}
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Features Grid */}
+          <div className="grid gap-4 sm:grid-cols-2">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-xl border border-border bg-gradient-to-br from-card to-background p-5 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+              >
+                <div className="absolute right-0 top-0 h-24 w-24 translate-x-6 -translate-y-6 rounded-full bg-primary/5 transition-transform group-hover:scale-150" />
+                <div className="relative">
+                  <div className="mb-3 inline-flex rounded-xl bg-primary/10 p-2 transition-colors group-hover:bg-primary/20">
+                    <feature.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="mb-1 font-display text-lg font-semibold">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
                 </div>
-                <h3 className="mb-2 font-display text-xl font-semibold">
-                  {feature.title}
-                </h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Image Side */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img
+                src={monitoringRoom}
+                alt="Central de monitoramento com múltiplas telas"
+                className="h-auto w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-lg border border-primary/30 bg-card/80 p-4 backdrop-blur-sm">
+                <div>
+                  <p className="font-semibold text-primary">Monitoramento 24/7</p>
+                  <p className="text-sm text-muted-foreground">Equipe especializada sempre atenta</p>
+                </div>
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/20">
+                  <div className="h-3 w-3 animate-pulse rounded-full bg-accent" />
+                </div>
               </div>
             </div>
-          ))}
+            {/* Decorative glow */}
+            <div className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-r from-primary/20 to-accent/20 blur-2xl" />
+          </div>
         </div>
 
         {/* CTA */}

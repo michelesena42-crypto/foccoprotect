@@ -1,4 +1,6 @@
 import { ScanFace, Car, Phone, KeyRound, Users, Building } from "lucide-react";
+import accessControlImage from "@/assets/access-control.jpg";
+import smartGateImage from "@/assets/smart-gate.jpg";
 
 const AccessControl = () => {
   const features = [
@@ -43,6 +45,16 @@ const AccessControl = () => {
 
   return (
     <section id="controle-acesso" className="section-padding relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={smartGateImage}
+          alt="Entrada inteligente de condomínio"
+          className="h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+      </div>
+
       <div className="container-custom relative z-10">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left Content */}
@@ -77,24 +89,43 @@ const AccessControl = () => {
             </a>
           </div>
 
-          {/* Right Grid */}
-          <div className="grid gap-4 sm:grid-cols-2">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="card-glow group p-5 transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="mb-3 inline-flex rounded-lg bg-accent/10 p-2">
-                  <feature.icon className="h-5 w-5 text-accent" />
+          {/* Right - Image + Grid */}
+          <div className="space-y-6">
+            {/* Featured Image */}
+            <div className="relative overflow-hidden rounded-2xl">
+              <img
+                src={accessControlImage}
+                alt="Sistema de controle de acesso com reconhecimento facial"
+                className="h-auto w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="rounded-lg border border-accent/30 bg-card/80 p-3 backdrop-blur-sm">
+                  <p className="text-sm font-medium text-accent">Reconhecimento Facial Avançado</p>
+                  <p className="text-xs text-muted-foreground">Identificação em menos de 1 segundo</p>
                 </div>
-                <h3 className="mb-1 font-display text-lg font-semibold">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {feature.description}
-                </p>
               </div>
-            ))}
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid gap-3 sm:grid-cols-2">
+              {features.slice(0, 4).map((feature, index) => (
+                <div
+                  key={index}
+                  className="card-glow group p-4 transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="mb-2 inline-flex rounded-lg bg-accent/10 p-2">
+                    <feature.icon className="h-4 w-4 text-accent" />
+                  </div>
+                  <h3 className="mb-1 font-display text-sm font-semibold">
+                    {feature.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
