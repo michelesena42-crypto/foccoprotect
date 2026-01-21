@@ -1,4 +1,4 @@
-import { Shield, Cpu, Eye, Smartphone } from "lucide-react";
+import { Shield, Cpu, Eye, Smartphone, MessageCircle, ArrowRight, CheckCircle, Users, Building, Clock } from "lucide-react";
 import heroImage from "@/assets/hero-security.jpg";
 
 const Hero = () => {
@@ -7,6 +7,12 @@ const Hero = () => {
     { icon: Cpu, label: "Inteligência Artificial" },
     { icon: Eye, label: "Monitoramento 24h" },
     { icon: Smartphone, label: "Controle Total" },
+  ];
+
+  const stats = [
+    { icon: Building, value: "50+", label: "Condomínios" },
+    { icon: Users, value: "10.000+", label: "Moradores" },
+    { icon: Clock, value: "99.9%", label: "Uptime" },
   ];
 
   return (
@@ -32,7 +38,7 @@ const Hero = () => {
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 animate-fade-in">
             <div className="h-2 w-2 animate-pulse rounded-full bg-accent" />
             <span className="text-sm font-medium text-primary">
-              Tecnologia de Ponta em Segurança
+              🏆 Líder em Segurança Inteligente
             </span>
           </div>
 
@@ -50,14 +56,47 @@ const Hero = () => {
             com tecnologia de última geração.
           </p>
 
+          {/* Trust Badge */}
+          <div className="mb-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.25s" }}>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-4 w-4 text-accent" />
+              <span>Orçamento gratuito</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-4 w-4 text-accent" />
+              <span>Resposta em até 2h</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-4 w-4 text-accent" />
+              <span>Sem compromisso</span>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
-          <div className="mb-12 flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <a href="#contato" className="btn-accent">
-              Solicitar Orçamento
+          <div className="mb-8 flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <a href="#contato" className="btn-accent group relative overflow-hidden px-8 py-4 text-lg animate-cta-pulse">
+              <MessageCircle className="h-5 w-5" />
+              <span className="font-bold">Solicitar Orçamento</span>
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
-            <a href="#solucoes" className="btn-outline">
+            <a href="#solucoes" className="btn-outline px-8 py-4 text-lg">
               Conhecer Soluções
             </a>
+          </div>
+
+          {/* Social Proof Stats */}
+          <div className="mb-8 flex flex-wrap gap-6 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+            {stats.map((stat, index) => (
+              <div key={index} className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20">
+                  <stat.icon className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <div className="font-display text-xl font-bold text-foreground">{stat.value}</div>
+                  <div className="text-xs text-muted-foreground">{stat.label}</div>
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* Feature Pills */}
@@ -65,7 +104,7 @@ const Hero = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-2 backdrop-blur-sm"
+                className="flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-2 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-primary/10"
               >
                 <feature.icon className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">{feature.label}</span>
