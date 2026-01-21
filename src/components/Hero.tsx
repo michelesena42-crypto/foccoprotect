@@ -42,10 +42,18 @@ const Hero = () => {
             </span>
           </div>
 
+          {/* Brand Name */}
+          <div className="mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <span className="font-display text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl">
+              <span className="gradient-text">FOCCO</span>{" "}
+              <span className="text-foreground">PROTECT</span>
+            </span>
+          </div>
+
           {/* Headline */}
-          <h1 className="mb-6 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <h1 className="mb-6 font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl animate-fade-in" style={{ animationDelay: "0.15s" }}>
             Segurança Inteligente para{" "}
-            <span className="gradient-text">Condomínios e Residências</span>{" "}
+            <span className="text-primary">Condomínios e Residências</span>{" "}
             Modernas
           </h1>
 
