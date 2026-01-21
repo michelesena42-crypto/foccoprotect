@@ -26,8 +26,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "E-mail",
-      value: "contato@focoprotect.com.br",
-      href: "mailto:contato@focoprotect.com.br",
+      value: "contato@foccoprotect.com.br",
+      href: "mailto:contato@foccoprotect.com.br",
     },
     {
       icon: MapPin,
