@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Foco Protect. Todos os direitos reservados.
+            © {new Date().getFullYear()} Focco Protect. Todos os direitos reservados.
           </p>
         </div>
       </div>
