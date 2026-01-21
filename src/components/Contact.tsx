@@ -32,7 +32,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Localização",
-      value: "São Paulo, SP",
+      value: "Belo Horizonte, MG",
       href: "#",
     },
   ];
