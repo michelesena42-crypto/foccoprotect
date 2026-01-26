@@ -20,8 +20,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      value: "(31) 3426-1700",
-      href: "tel:+553134261700",
+      value: "(31) 99484-7724",
+      href: "tel:+5531994847724",
     },
     {
       icon: Mail,
