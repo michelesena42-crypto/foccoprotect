@@ -1,5 +1,5 @@
 import { Shield } from "lucide-react";
-import logo from "@/assets/logo-foco-protect.png";
+import logo from "@/assets/logo-focco-protect.png";
 
 const Footer = () => {
   const links = {
@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#inicio" className="mb-4 inline-block">
-              <img src={logo} alt="Foco Protect" className="h-16 w-auto" />
+              <img src={logo} alt="Focco Protect" className="h-24 w-auto" />
             </a>
             <p className="mb-4 max-w-md text-muted-foreground">
               Segurança inteligente para condomínios e residências modernas. 
