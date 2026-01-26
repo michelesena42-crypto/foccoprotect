@@ -10,7 +10,13 @@ const Contact = () => {
   });
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+    
+    const whatsappNumber = "5531994847724";
+    const text = `*Novo contato pelo site*%0A%0A*Nome:* ${encodeURIComponent(formData.name)}%0A*E-mail:* ${encodeURIComponent(formData.email)}%0A*Telefone:* ${encodeURIComponent(formData.phone)}%0A*Mensagem:* ${encodeURIComponent(formData.message)}`;
+    
+    window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
+    
+    toast.success("Redirecionando para o WhatsApp...");
     setFormData({
       name: "",
       email: "",
