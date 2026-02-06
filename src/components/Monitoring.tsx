@@ -110,7 +110,7 @@ const Monitoring = () => {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <a href="#contato" className="btn-primary">
+          <a href="https://wa.me/553135865800" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Conhecer Sistema de Monitoramento
           </a>
         </div>
