@@ -84,7 +84,7 @@ const AccessControl = () => {
               ))}
             </div>
 
-            <a href="#contato" className="btn-primary">
+            <a href="https://wa.me/553135865800" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Solicitar Demonstração
             </a>
           </div>
