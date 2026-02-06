@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
 
             {/* WhatsApp Button */}
-            <a target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30" href="https://wa.me/5531994847724">
+            <a target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30" href="https://wa.me/553135865800">
               <MessageCircle className="h-6 w-6" />
               Falar pelo WhatsApp
             </a>

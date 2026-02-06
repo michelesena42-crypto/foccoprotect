@@ -82,7 +82,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="mb-8 flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <a href="#contato" className="btn-accent group relative overflow-hidden px-8 py-4 text-lg animate-cta-pulse">
+            <a href="https://wa.me/553135865800" target="_blank" rel="noopener noreferrer" className="btn-accent group relative overflow-hidden px-8 py-4 text-lg animate-cta-pulse">
               <MessageCircle className="h-5 w-5" />
               <span className="font-bold">Solicitar Orçamento</span>
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
