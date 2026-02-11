@@ -129,20 +129,11 @@ const AppSection = () => {
             Muito Mais do que Câmeras.{" "}
             <span className="gradient-text">Uma Solução Completa.</span>
           </h3>
-          <p className="mx-auto mb-8 max-w-2xl text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-muted-foreground">
             Ao contratar a FocoProtect, o condomínio não recebe apenas um sistema de câmeras, 
             mas sim uma solução integrada de segurança, controle de acesso e gestão, elevando 
             o padrão do empreendimento e trazendo tranquilidade para todos.
           </p>
-          <a
-            href="https://wa.me/553135865800"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-accent inline-flex text-sm"
-          >
-            <Smartphone className="h-4 w-4" />
-            Conhecer o Aplicativo
-          </a>
         </div>
       </div>
     </section>
