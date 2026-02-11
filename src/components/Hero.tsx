@@ -1,5 +1,6 @@
 import { Shield, Cpu, Eye, Smartphone, MessageCircle, ArrowRight, CheckCircle, Users, Building, Clock } from "lucide-react";
 import heroImage from "@/assets/hero-security.jpg";
+import logo from "@/assets/logo-focco-protect.png";
 
 const Hero = () => {
   const features = [
@@ -34,19 +35,16 @@ const Hero = () => {
       {/* Content */}
       <div className="container-custom relative z-10 flex min-h-screen items-center">
         <div className="max-w-3xl py-20">
+          {/* Logo */}
+          <div className="mb-6 animate-fade-in">
+            <img src={logo} alt="Focco Protect" className="h-24 w-auto sm:h-28 lg:h-32" />
+          </div>
+
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 animate-fade-in">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 animate-fade-in" style={{ animationDelay: "0.05s" }}>
             <div className="h-2 w-2 animate-pulse rounded-full bg-accent" />
             <span className="text-sm font-medium text-primary">
               🏆 Líder em Segurança Inteligente
-            </span>
-          </div>
-
-          {/* Brand Name */}
-          <div className="mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <span className="font-display text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl">
-              <span className="gradient-text">FOCCO</span>{" "}
-              <span className="text-foreground">PROTECT</span>
             </span>
           </div>
 
