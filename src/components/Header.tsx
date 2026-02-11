@@ -30,10 +30,10 @@ const Header = () => {
   }];
   return <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container-custom">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
-            <img src={logo} alt="Focco Protect" className="h-20 w-auto" />
+            <img src={logo} alt="Focco Protect" className="h-28 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
