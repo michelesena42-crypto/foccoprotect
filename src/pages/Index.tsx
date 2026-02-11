@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
 import Solutions from "@/components/Solutions";
+import AppSection from "@/components/AppSection";
 import AccessControl from "@/components/AccessControl";
 import Monitoring from "@/components/Monitoring";
 import Differentials from "@/components/Differentials";
@@ -17,6 +18,7 @@ const Index = () => {
         <Hero />
         <Benefits />
         <Solutions />
+        <AppSection />
         <AccessControl />
         <Monitoring />
         <Differentials />

@@ -110,36 +110,6 @@ const Solutions = () => {
           </div>
         </div>
 
-        {/* App Section */}
-        <div className="mt-20 grid items-center gap-12 lg:grid-cols-2">
-          <div className="order-2 lg:order-1">
-            <h3 className="mb-4 font-display text-2xl font-bold sm:text-3xl">
-              Aplicativo de <span className="gradient-text">Gestão Completa</span>
-            </h3>
-            <p className="mb-6 text-muted-foreground">
-              Tenha o controle total do seu condomínio na palma da mão. Visualize câmeras, 
-              gerencie acessos, receba alertas e comunique-se com a portaria em tempo real.
-            </p>
-            <ul className="space-y-3">
-              {["Acesso às câmeras em tempo real", "Liberação de visitantes pelo app", "Notificações de eventos", "Comunicação com portaria"].map((item, i) => (
-                <li key={i} className="flex items-center gap-2 text-muted-foreground">
-                  <div className="h-1.5 w-1.5 rounded-full bg-accent" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="order-1 flex justify-center lg:order-2">
-            <div className="relative">
-              <img
-                src={securityApp}
-                alt="Aplicativo de gestão de segurança"
-                className="h-auto max-w-xs rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -inset-4 -z-10 rounded-2xl bg-gradient-to-r from-primary/20 to-accent/20 blur-xl" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
