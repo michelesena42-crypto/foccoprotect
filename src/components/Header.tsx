@@ -13,6 +13,9 @@ const Header = () => {
     href: "#solucoes",
     label: "Soluções"
   }, {
+    href: "#aplicativo",
+    label: "Aplicativo"
+  }, {
     href: "#controle-acesso",
     label: "Controle de Acesso"
   }, {
