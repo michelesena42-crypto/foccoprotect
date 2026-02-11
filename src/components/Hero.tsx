@@ -121,7 +121,7 @@ const Hero = () => {
             <img
               src={logo}
               alt="Focco Protect"
-              className="h-48 w-auto drop-shadow-[0_0_30px_hsla(217,91%,50%,0.3)] sm:h-56 lg:h-72 xl:h-80"
+              className="h-56 w-auto drop-shadow-[0_0_40px_hsla(217,91%,50%,0.4)] sm:h-72 lg:h-96 xl:h-[28rem]"
             />
           </div>
         </div>

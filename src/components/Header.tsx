@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo-focco-protect.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [{
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
-            <img src={logo} alt="Focco Protect" className="h-28 w-auto" />
+            <span className="font-display text-xl font-bold text-foreground">Focco Protect</span>
           </a>
 
           {/* Desktop Navigation */}
