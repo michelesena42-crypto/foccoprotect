@@ -45,7 +45,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden items-center gap-4 lg:flex">
-            <a target="_blank" rel="noopener noreferrer" className="btn-accent text-sm" href="https://wa.me/553135865800">
+            <a target="_blank" rel="noopener noreferrer" className="btn-accent text-sm" href="https://wa.me/5531920013756">
               <Phone className="h-4 w-4" />
               Falar com Especialista
             </a>
@@ -63,7 +63,7 @@ const Header = () => {
               {navLinks.map(link => <a key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground" onClick={() => setIsMenuOpen(false)}>
                   {link.label}
                 </a>)}
-              <a href="https://wa.me/553135865800" target="_blank" rel="noopener noreferrer" className="btn-accent mt-2 text-center text-sm">
+              <a href="https://wa.me/5531920013756" target="_blank" rel="noopener noreferrer" className="btn-accent mt-2 text-center text-sm">
                 <Phone className="h-4 w-4" />
                 Falar com Especialista
               </a>
