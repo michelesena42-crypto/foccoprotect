@@ -11,7 +11,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const whatsappNumber = "553135865800";
+    const whatsappNumber = "5531920013756";
     const text = `*Novo contato pelo site*%0A%0A*Nome:* ${encodeURIComponent(formData.name)}%0A*E-mail:* ${encodeURIComponent(formData.email)}%0A*Telefone:* ${encodeURIComponent(formData.phone)}%0A*Mensagem:* ${encodeURIComponent(formData.message)}`;
     
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
@@ -27,8 +27,8 @@ const Contact = () => {
   const contactInfo = [{
     icon: Phone,
     title: "Telefone",
-    value: "(31) 3586-5800",
-    href: "tel:+553135865800"
+    value: "(31) 92001-3756",
+    href: "tel:+5531920013756"
   }, {
     icon: Mail,
     title: "E-mail",
@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
 
             {/* WhatsApp Button */}
-            <a target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30" href="https://wa.me/553135865800">
+            <a target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-green-600 to-green-500 px-8 py-4 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30" href="https://wa.me/5531920013756">
               <MessageCircle className="h-6 w-6" />
               Falar pelo WhatsApp
             </a>
